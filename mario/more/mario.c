@@ -14,14 +14,24 @@ int main(void)
     //iterate through rows
     for (int row = 0; row < height; row++)
     {
-        //iterate through columns
-        for (int column = 0; column < (height * 2) + 2; column++)
+        //print spaces
+        for(int column = 0; column < height - (row + 1); column++)
         {
-            if (column < height && column >
-            {
-
-            }
+            printf(" ");
         }
+        //print hashes
+        for(int column = height - (row + 1); column < height; column++)
+        {
+            printf("#");
+        }
+        //print gap
+        printf("  ");
+        //print hashes right
+        for(int column = height - (row + 1); column < height; column++)
+        {
+            printf("#");
+        }
+        //next line
         printf("\n");
     }
 

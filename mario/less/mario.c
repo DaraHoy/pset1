@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
-
+//less
 int main(void)
 {
     int h = get_int("Height: ");
