@@ -9,6 +9,7 @@ int main(void)
     while (h < 0 || h > 23)
     {
         h = get_int("Height: ");
+        //Sean: already declared h on line 6.
     }
     //iterate through rows
     for (int row = 1; row <= h; row++)
@@ -16,6 +17,7 @@ int main(void)
         //create an empty string
         char stair[25];
         stair[24] = '\0';
+        //Sean: honestly not sure what this is doing, looks like magic numbers?
         //iterate through columns
         for (int column = 0; column <= h; column++)
         {
@@ -32,3 +34,5 @@ int main(void)
         printf("%s\n", stair);
     }
 }
+//Sean: im not to sure how the stair variable works but it works.
+

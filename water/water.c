@@ -10,4 +10,5 @@ int main(void)
     int b = 12;
 
     printf("%i\n", m*b);
+    //Sean: should put printf(bottles: %i\n) for a eaiser to read output
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <math.h>
-
+//Sean: this problem looks good.
 int main(void)
 {
     //declare float
