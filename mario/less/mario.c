@@ -1,34 +1,31 @@
 #include <stdio.h>
 #include <cs50.h>
-//less
+
 int main(void)
 {
-    int h = get_int("Height: ");
-    //prompt user for pyramid height
-    //if h is less than 1 or greater than 23 prompt the user again
-    while (h < 0 || h > 23)
+    //initialize height
+    int height;
+    //do while loop to validate only positive integers below 24
+    do
     {
-        h = get_int("Height: ");
+        height = get_int("Height: ");
     }
+    while (height < 0 || height > 23);
     //iterate through rows
-    for (int row = 1; row <= h; row++)
+    for (int row = 0; row < height; row++)
     {
-        //create an empty string
-        char stair[25];
-        stair[24] = '\0';
-        //iterate through columns
-        for (int column = 0; column <= h; column++)
+        //print spaces
+        for (int column = 0; column < height - (row + 1); column++)
         {
-            if (column <= row)
-            {
-                stair[h - column] = '#';
-            }
-            else
-            {
-                stair[h - column] = ' ';
-            }
+            printf(" ");
         }
-        //print stair
-        printf("%s\n", stair);
+        //print hashes
+        for (int column = height - (row + 1); column <= height; column++)
+        {
+            printf("#");
+        }
+        //next line
+        printf("\n");
     }
+
 }
