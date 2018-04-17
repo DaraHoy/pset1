@@ -9,5 +9,5 @@ int main(void)
     //Set bottles
     int b = 12;
 
-    printf("%i\n", m*b);
+    printf("%i\n", m * b);
 }

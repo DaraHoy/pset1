@@ -15,19 +15,19 @@ int main(void)
     for (int row = 0; row < height; row++)
     {
         //print spaces
-        for(int column = 0; column < height - (row + 1); column++)
+        for (int column = 0; column < height - (row + 1); column++)
         {
             printf(" ");
         }
         //print hashes
-        for(int column = height - (row + 1); column < height; column++)
+        for (int column = height - (row + 1); column < height; column++)
         {
             printf("#");
         }
         //print gap
         printf("  ");
         //print hashes right
-        for(int column = height - (row + 1); column < height; column++)
+        for (int column = height - (row + 1); column < height; column++)
         {
             printf("#");
         }
